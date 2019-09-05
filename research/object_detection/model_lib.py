@@ -513,7 +513,8 @@ def create_model_fn(detection_model_fn, configs, hparams, use_tpu=False,
           train_op=train_op,
           eval_metric_ops=eval_metric_ops,
           export_outputs=export_outputs,
-          scaffold=scaffold)
+      )
+          #scaffold=scaffold)
 
   return model_fn
 
